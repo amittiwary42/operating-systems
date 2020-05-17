@@ -11,11 +11,11 @@ int main(int argc, char *argv[]) {
 		printf("Error creation in Pipe\n");
 	pid = fork();
 
-	if (pid != 0){
+	if (pid != 0) {
 		/*Child Process*/
 		read(mypipefd[0], buf, 15);
 	}
-	else{
+	else {
 		write(mypipefd[1], "OS Unix Tut", 11);
 		printf("buf: %s\n", buf);
 	}

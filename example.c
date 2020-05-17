@@ -5,7 +5,7 @@
 #include<time.h>
 #include<string.h>
 
-int main (int argc, char *argv[]){
+int main (int argc, char *argv[]) {
 	struct stat buf;
 	char mtime[100];
 	stat("file1.txt", &buf);
